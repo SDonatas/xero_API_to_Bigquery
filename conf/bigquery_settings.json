@@ -1,0 +1,26 @@
+{"projectName": "",
+ "GOOGLE_APPLICATION_CREDENTIALS": "/auth/service_account.json",
+ "dataset": "xero",
+ "schema": {"balanceSheet": {"ToDate": ["DATE", "NULLABLE"],
+                             "FromDate": ["DATE", "NULLABLE"],
+                             "Section": ["STRING", "NULLABLE"],
+                             "Item": ["STRING", "NULLABLE"],
+                             "ToValue": ["FLOAT", "NULLABLE"],
+                             "FromValue": ["FLOAT", "NULLABLE"]
+                            },
+
+            "ProfitAndLoss": {"FromDate": ["DATE", "NULLABLE"],
+                              "ToDate": ["DATE", "NULLABLE"],
+                              "Section": ["STRING", "NULLABLE"],
+                              "Item": ["STRING", "NULLABLE"],
+                              "Amount": ["FLOAT", "NULLABLE"]
+                             },
+
+            "Logs": {"ScriptName": ["STRING", "NULLABLE"],
+                    "SuccessfulRun": ["BOOLEAN", "NULLABLE"],
+                    "Details": ["STRING", "NULLABLE"],
+                    "Timestamp": ["TIMESTAMP", "NULLABLE"]
+    
+            }
+ }
+}
